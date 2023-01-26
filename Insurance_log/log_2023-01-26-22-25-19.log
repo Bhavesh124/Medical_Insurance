@@ -1,0 +1,17 @@
+[2023-01-26 22:25:21,075] root - INFO - Export collection data as pandas dataframe
+[2023-01-26 22:25:21,075] root - INFO - Reading data from database: {database_name} and collection:{collection_name}
+[2023-01-26 22:25:21,150] root - INFO - Find columns:Index(['_id', 'age', 'sex', 'bmi', 'children', 'smoker', 'region', 'expenses'], dtype='object')
+[2023-01-26 22:25:21,150] root - INFO - Dropping columns: _id
+[2023-01-26 22:25:21,151] root - INFO - Rows and Columns in df: (2676, 7)
+[2023-01-26 22:25:21,151] root - INFO - Save data in feature store
+[2023-01-26 22:25:21,152] root - INFO - create feature store folder if not available
+[2023-01-26 22:25:21,152] root - INFO - save df to feature store folder
+[2023-01-26 22:25:21,164] root - INFO - split dataset into train and test set
+[2023-01-26 22:25:21,166] root - INFO - create dataset directory if not available
+[2023-01-26 22:25:21,166] root - INFO - Save df to feature store folder
+[2023-01-26 22:25:21,178] root - INFO - Data Ingestion Artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/26012023__222521/data_ingestion/feature_store/insurance.csv', train_file_path='/config/workspace/artifact/26012023__222521/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/26012023__222521/data_ingestion/dataset/test.csv')
+[2023-01-26 22:25:21,179] root - INFO - f**********Data_Validation***********
+[2023-01-26 22:25:21,179] root - INFO - Reading train dataframe
+[2023-01-26 22:25:21,183] root - INFO - Replace na value in base df
+[2023-01-26 22:25:21,184] root - INFO - Drop null values colums from base df
+[2023-01-26 22:25:21,186] root - INFO - selecting column names which contains null above 0.2
