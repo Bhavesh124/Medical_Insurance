@@ -4,10 +4,10 @@ from typing import List
 requirement_file_name = 'requirements.txt'
 REMOVE_PACKAGE = '-e .'
 
-def get_requirement()->List[str]:
+def get_requirements()->List[str]:
     with open(requirement_file_name) as requirement_file:
-        requirement_list = requirement_file.readline()
-    requirement_list = [requirement_file.replace("/n","") for requirement_name in requirement_list]
+        requirement_list = requirement_file.readlines()
+    requirement_list = [requirement_name.replace("\n","") for requirement_name in requirement_list]
 
     if REMOVE_PACKAGE in requirement_list:
         requirement_list.remove(REMOVE_PACKAGE)
@@ -20,4 +20,5 @@ setup(name = "Insurance",
       author = "Bhavesh Chavan",
       author_email = "chavanbhavesh60@gmail.com",
       packages = find_packages(),
-      install_requires = get_requirement())
+      install_requires = get_requirements()
+      )

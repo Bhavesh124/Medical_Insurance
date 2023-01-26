@@ -1,0 +1,3 @@
+[2023-01-25 13:18:57,747] root - INFO - Reading data from database: {database_name} and collection:{collection_name}
+[2023-01-25 13:18:57,752] root - INFO - Find columns:Index([], dtype='object')
+[2023-01-25 13:18:57,753] root - INFO - Rows and Columns in df: (0, 0)

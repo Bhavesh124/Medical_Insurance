@@ -1,0 +1,12 @@
+[2023-01-26 14:30:46,974] root - INFO - Export collection data as pandas dataframe
+[2023-01-26 14:30:46,975] root - INFO - Reading data from database: {database_name} and collection:{collection_name}
+[2023-01-26 14:30:47,050] root - INFO - Find columns:Index(['_id', 'age', 'sex', 'bmi', 'children', 'smoker', 'region', 'expenses'], dtype='object')
+[2023-01-26 14:30:47,050] root - INFO - Dropping columns: _id
+[2023-01-26 14:30:47,052] root - INFO - Rows and Columns in df: (2676, 7)
+[2023-01-26 14:30:47,052] root - INFO - Save data in feature store
+[2023-01-26 14:30:47,053] root - INFO - create feature store folder if not available
+[2023-01-26 14:30:47,053] root - INFO - save df to feature store folder
+[2023-01-26 14:30:47,065] root - INFO - split dataset into train and test set
+[2023-01-26 14:30:47,067] root - INFO - create dataset directory if not available
+[2023-01-26 14:30:47,067] root - INFO - Save df to feature store folder
+[2023-01-26 14:30:47,079] root - INFO - Data Ingestion Artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/26012023__143046/data_ingestion/feature_store/insurance.csv', train_file_path='/config/workspace/artifact/26012023__143046/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/26012023__143046/data_ingestion/dataset/test.csv')

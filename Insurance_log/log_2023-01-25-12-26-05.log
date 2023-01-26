@@ -1,0 +1,2 @@
+[2023-01-25 12:26:06,461] root - INFO - Reading data from database: {database_name} and collection:{collection_name}
+[2023-01-25 12:26:06,466] root - INFO - Find columns:Index([], dtype='object')
