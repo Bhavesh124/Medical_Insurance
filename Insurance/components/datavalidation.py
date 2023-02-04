@@ -13,7 +13,9 @@ from scipy.stats import ks_2samp
 class DataValidation:
 
     def __init__(self, data_validation_config : config_entity.DataValidationConfig,
-                       data_ingestion_artifact : artifact_entity.DataIngestionArtifact):
+                       data_ingestion_artifact : artifact_entity.DataIngestionArtifact
+    
+                ):
             try:
                 logging.info("f**********Data_Validation***********")
                 self.data_validation_config = data_validation_config
