@@ -15,6 +15,7 @@ Insurance/components/dataingestion.py
 Insurance/components/datatransformation.py
 Insurance/components/datavalidation.py
 Insurance/components/modelevaluation.py
+Insurance/components/modelpusher.py
 Insurance/components/modeltrainer.py
 Insurance/entity/__init__.py
 Insurance/entity/artifact_entity.py
@@ -22,3 +23,4 @@ Insurance/entity/config_entity.py
 Insurance/exception/__init__.py
 Insurance/logger/__init__.py
 Insurance/pipeline/__init__.py
+Insurance/pipeline/batchprediction.py

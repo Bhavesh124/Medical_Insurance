@@ -46,13 +46,13 @@ class DataValidation:
 
     def is_required_columns_exists(self,base_df:pd.DataFrame, current_df:pd.DataFrame, report_key_name:str)->bool:
         try:
-            base_columns = base_df
-            current_columns = current_df 
+            base_columns = base_df.columns
+            current_columns = current_df.columns
 
 
             missing_columns = []
-            for base_columns in base_columns:
-                if base_columns not in current_columns:
+            for base_column in base_columns:
+                if base_column not in current_columns:
                     logging.info(f"column: [{base}] is not available")
                     missing_columns.append(base_columns)
 

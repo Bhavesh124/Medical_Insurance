@@ -1,0 +1,31 @@
+[2023-02-17 21:29:44,741] root - INFO - Export collection data as pandas dataframe
+[2023-02-17 21:29:44,741] root - INFO - Reading data from database: {database_name} and collection:{collection_name}
+[2023-02-17 21:29:44,987] root - INFO - Find columns:Index(['_id', 'age', 'sex', 'bmi', 'children', 'smoker', 'region', 'expenses'], dtype='object')
+[2023-02-17 21:29:44,988] root - INFO - Dropping columns: _id
+[2023-02-17 21:29:44,990] root - INFO - Rows and Columns in df: (14718, 7)
+[2023-02-17 21:29:44,991] root - INFO - Save data in feature store
+[2023-02-17 21:29:44,993] root - INFO - create feature store folder if not available
+[2023-02-17 21:29:44,994] root - INFO - save df to feature store folder
+[2023-02-17 21:29:45,057] root - INFO - split dataset into train and test set
+[2023-02-17 21:29:45,061] root - INFO - create dataset directory if not available
+[2023-02-17 21:29:45,061] root - INFO - Save df to feature store folder
+[2023-02-17 21:29:45,127] root - INFO - Data Ingestion Artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/17022023__212944/data_ingestion/feature_store/insurance.csv', train_file_path='/config/workspace/artifact/17022023__212944/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/17022023__212944/data_ingestion/dataset/test.csv')
+[2023-02-17 21:29:45,130] root - INFO - f**********Data_Validation***********
+[2023-02-17 21:29:45,131] root - INFO - Reading train dataframe
+[2023-02-17 21:29:45,136] root - INFO - Replace na value in base df
+[2023-02-17 21:29:45,136] root - INFO - Drop null values colums from base df
+[2023-02-17 21:29:45,138] root - INFO - selecting column names which contains null above 0.2
+[2023-02-17 21:29:45,138] root - INFO - Columns to drop: []
+[2023-02-17 21:29:45,139] root - INFO - Reading train dataframe
+[2023-02-17 21:29:45,147] root - INFO - Reading test dataframe
+[2023-02-17 21:29:45,158] root - INFO - selecting column names which contains null above 0.2
+[2023-02-17 21:29:45,158] root - INFO - Columns to drop: []
+[2023-02-17 21:29:45,162] root - INFO - selecting column names which contains null above 0.2
+[2023-02-17 21:29:45,162] root - INFO - Columns to drop: []
+[2023-02-17 21:29:45,166] root - INFO - Is all required columns present in train df
+[2023-02-17 21:29:45,166] root - INFO - Is all required columns present in test df
+[2023-02-17 21:29:45,167] root - INFO - As all column are available in train df hence detecting data drift
+[2023-02-17 21:29:45,239] root - INFO - As all column are available in test df hence detecting data drift
+[2023-02-17 21:29:45,263] root - INFO - writing report in yaml file
+[2023-02-17 21:29:45,264] root - INFO - Data Validation Artifact: DataValidationArtifact(report_file_path='/config/workspace/artifact/17022023__212944/data_validation/report.yaml')
+[2023-02-17 21:29:45,333] root - INFO - Model evaluation artifact: ModelEvaluationArtifact(is_model_expected=True, improved_accuracy=None)
