@@ -1,0 +1,5 @@
+[2023-02-21 00:34:07,762] root - INFO - Creating model resolver object
+[2023-02-21 00:34:07,762] root - INFO - Reading file :/config/workspace/insurance.csv
+[2023-02-21 00:34:07,769] root - INFO - Loading transformer to transform dataset
+[2023-02-21 00:34:08,258] root - INFO - Target encoder to convert predicted column into categorical
+[2023-02-21 00:34:08,264] root - INFO - Loading model to make prediction
