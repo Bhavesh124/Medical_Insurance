@@ -1,0 +1,12 @@
+artifact
+configs
+Insurance_log
+prediction
+saves_models
+*.egg-info
+.env
+demo.py
+data_dump.py
+main.py
+README.md
+template.py

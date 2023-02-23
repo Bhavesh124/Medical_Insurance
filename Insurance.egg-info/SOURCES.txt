@@ -24,3 +24,4 @@ Insurance/exception/__init__.py
 Insurance/logger/__init__.py
 Insurance/pipeline/__init__.py
 Insurance/pipeline/batchprediction.py
+Insurance/pipeline/trainingpipeline.py
